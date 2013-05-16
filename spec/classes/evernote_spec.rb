@@ -5,7 +5,7 @@ require 'spec_helper'
 describe 'evernote' do
   it do
 	should contain_class('evernote')
-	should contain_package('Evernote').with_provider('appdmg')
-	should contain_package('Evernote').with_source('http://cdn1.evernote.com/mac/release/Evernote_400995.dmg')
+	should contain_package('Evernote').with_provider('compressed_app')
+	should contain_package('Evernote').with_source('http://cdn1.evernote.com/mac/release/Evernote_400995.zip')
   end
 end
